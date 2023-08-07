@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#game{
+  width: 100%;
+  height: 100vh;
+  background: url('road.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#car2{
+  width: 100px;
+  height: 100px;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: car2 1.5s linear infinite;
+}
+#car2 img{
+  height: 100%;
+  width: 100%;
+}
+@keyframes car2{
+  0%{
+    top: 0px;
+  }
+  100%{
+    top: 760px;
+  }
+}
+
+#car1{
+  height: 100px;
+  width: 100px;
+  background: none;
+  position: relative;
+  top: 520px;
+  left: 130px;
+  
+}
+#car1 img{
+  height: 100%;
+  width: 100%;
+}
+#gameover{
+  display: none;
+}
+.buttons button{
+  outline: none;
+  border: none;
+}
+.buttons button:hover{
+  background: coral;
+  color: #fff;
+}
